@@ -57,3 +57,13 @@ OKX_PASSPHRASE=your_okx_passphrase_here
 BYBIT_API_KEY=your_bybit_api_key_here
 BYBIT_API_SECRET=your_bybit_api_secret_here
 ```
+
+## Donations
+If you find this project helpful and would like to support its development, consider making a donation:
+[![Buy Me a Coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/antiglobalist)
+
+Arbitrum USDT 0x3E92ac8A955c0CcaA3abE350A7097b4e8aAFB5c5
+
+Your support is greatly appreciated!
+
+**Developed by** [Antiglobalist](https://t.me/deni_rodionov)
