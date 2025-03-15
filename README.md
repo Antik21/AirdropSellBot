@@ -1,6 +1,6 @@
 # AirdropSellBot
 
-A Python-based script for **automated token selling** on cryptocurrency exchanges. Supports **Binance**, **OKX**, and **Bybit** with a unified interface for checking balances, placing limit orders, and executing fast sales. Designed to monitor an asset balance and instantly sell tokens via limit orders as soon as they arrive on the account, optimizing price calculation for successful execution. For OKX, it automatically transfers funds from the Funding to the Trading account to enable immediate trading.
+A Python-based script for **automated token selling** on cryptocurrency exchanges. Supports **Binance**, **OKX**, **Bybit**, and **Gate** with a unified interface for checking balances, placing limit orders, and executing fast sales. Designed to monitor an asset balance and instantly sell tokens via limit orders as soon as they arrive on the account, optimizing price calculation for successful execution. For OKX, it automatically transfers funds from the Funding to the Trading account to enable immediate trading.
 
 ---
 
@@ -20,6 +20,7 @@ A Python-based script for **automated token selling** on cryptocurrency exchange
 - **Binance** (via `python-binance`)
 - **OKX** (via `python-okx`)
 - **Bybit** (via `pybit`)
+- **Gate.IO** (via `gate-api`)
 
 ---
 
@@ -29,7 +30,7 @@ A Python-based script for **automated token selling** on cryptocurrency exchange
 - **Dependencies**: 
   - `python-binance`
   - `python-okx`
-  - `pybit`
+  - `pybit` ...
 
 Install them with:
 ```bash
@@ -56,6 +57,10 @@ OKX_PASSPHRASE=your_okx_passphrase_here
 # Bybit API keys
 BYBIT_API_KEY=your_bybit_api_key_here
 BYBIT_API_SECRET=your_bybit_api_secret_here
+
+# Gate API keys
+GATE_API_KEY=your_gate_api_key_here
+GATE_API_SECRET=your_gate_api_secret_here
 ```
 
 ## Donations
