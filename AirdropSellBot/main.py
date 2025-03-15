@@ -2,6 +2,7 @@
 from case.LimitSell import limit_sell
 from exchange.BinanceExchange import BinanceExchange
 from exchange.BybitExchange import BybitExchange
+from exchange.GateIOExchange import GateIOExchange
 from exchange.OKXExchange import OKXExchange
 
 
@@ -10,15 +11,16 @@ def main():
     print("1 - OKX")
     print("2 - Bybit")
     print("3 - Binance")
+    print("4 - Gate.io")
 
     while True:
         try:
-            choice = int(input("Введите номер биржи (1-3): "))
-            if choice in [1, 2, 3]:
+            choice = int(input("Введите номер биржи (1-4): "))
+            if choice in [1, 2, 3, 4]:
                 break
-            print("Пожалуйста, введите число от 1 до 3.")
+            print("Пожалуйста, введите число от 1 до 4.")
         except ValueError:
-            print("Некорректный ввод, введите число от 1 до 3.")
+            print("Некорректный ввод, введите число от 1 до 4.")
 
     asset = input("Введите символ монеты (например, BTC): ").upper()
     sell_percentage = float(input("Введите процент продаваемого актива (от 0.01 до 1): "))
@@ -30,6 +32,8 @@ def main():
         exchange = BybitExchange()
     elif choice == 3:  # Binance
         exchange = BinanceExchange()
+    elif choice == 4:
+        exchange = GateIOExchange()
 
     limit_sell(exchange, sell_percentage, asset)
 
