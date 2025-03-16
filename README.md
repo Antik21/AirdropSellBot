@@ -24,6 +24,33 @@ A Python-based script for **automated token selling** on cryptocurrency exchange
 
 ---
 
+## ⚙️ Selling Logic
+
+TokenSniper automates the selling process with the following steps:
+
+1. **User Input**:
+   - The user selects an exchange (e.g., 1 for OKX, 2 for Bybit, 3 for Binance, 4 for Gate.io).
+   - The user specifies the asset symbol to sell (e.g., `BTC`) and the percentage of the balance to sell (e.g., `0.5` for 50%).
+   - The script then initiates the selling logic.
+
+2. **Balance Monitoring**:
+   - Every second, the bot checks the wallet balance for the specified asset.
+   - As soon as the balance becomes non-zero (e.g., when tokens arrive on the account), the selling process starts.
+
+3. **Limit Order Execution**:
+   - The bot retrieves the list of bids from the order book for the trading pair (e.g., `BTC_USDT`).
+   - It calculates one or more limit orders based on the bid prices, optimizing for successful execution. The price is derived from the order book to ensure the order matches existing demand.
+
+4. **Order Management**:
+   - If an order fails to execute within 3 seconds or the market price changes significantly, the bot cancels the order.
+   - It then recalculates a new order with updated prices from the latest order book data.
+   - This process repeats until the entire specified percentage of the asset is sold.
+
+5. **Completion**:
+   - The bot continues placing and managing orders until all tokens are successfully sold, ensuring the full amount is executed efficiently.
+
+---
+
 ## 📋 Requirements
 
 - **Python**: 3.7 or higher
