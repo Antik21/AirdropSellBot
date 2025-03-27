@@ -88,6 +88,11 @@ BYBIT_API_SECRET=your_bybit_api_secret_here
 # Gate API keys
 GATE_API_KEY=your_gate_api_key_here
 GATE_API_SECRET=your_gate_api_secret_here
+
+# Transfer
+METAMASK_PRIVATE_KEY=metamask_pk
+EXCHANGE_WALLET_ADDRESS=exchange_wallet
+TOKEN_CONTRACT_ADDRESS=token_contract
 ```
 
 ## Donations
