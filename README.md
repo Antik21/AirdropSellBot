@@ -13,6 +13,10 @@ A Python-based script for **automated token selling** on cryptocurrency exchange
 - **Order Management**: Retry or cancel limit orders if they don’t execute within 3 seconds.
 - **OKX Auto-Transfer**: Automatically transfer funds from Funding to Trading account on OKX for seamless trading.
 
+### Extra
+**Metamask transfer script**: Await selected asset on your wallet and immediately transfer it to prefield wallet address
+  
+
 ---
 
 ## 🏦 Supported Exchanges
@@ -21,6 +25,7 @@ A Python-based script for **automated token selling** on cryptocurrency exchange
 - **OKX** (via `python-okx`)
 - **Bybit** (via `pybit`)
 - **Gate.IO** (via `gate-api`)
+- **MEXC** (In progress)
 
 ---
 
